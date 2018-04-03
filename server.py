@@ -25,9 +25,9 @@ while True:
 			data = data.replace("b", "", 1)
 			data = data.replace("'", "")
 			if data:
-				print(data)
+				#print(data)
 				tipus = data.split(':')
-				print(tipus)
+				#print(tipus)
 				print("binaris tipusa: " + tipus[0])
 				print("binaris: " + tipus[1])
 				splittedBinary=re.findall('........',tipus[1])
@@ -35,13 +35,13 @@ while True:
 				for bin in splittedBinary:
 					for key in codebook:
 						if codebook[key] == bin:
-							print(key)
+							#print(key)
 							word+=key
-				print(word)
+				#print(word)
 				word = word.replace("ESC", "")
 				word = word.replace("FLAG", "", 1)
 				word = word.replace("FLAG", "", len(word))
-				print(word)
+				print("cliens altal kuldott szo: " +word)
 			else:
 				sock.close()
 				inputs.remove(sock)

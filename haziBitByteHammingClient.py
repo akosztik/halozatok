@@ -7,14 +7,14 @@ codebook = {'FLAG': '01111110', 'A': '10000001', 'B': '00001110', 'C': '10110011
 
 type=sys.argv[1]
 str1=type + ':' + codebook['FLAG']
-print(str1)
-print("---------------")
-print(sys.argv)
-print("---------------")
+#print(str1)
+#print("---------------")
+#print(sys.argv)
+#print("---------------")
 splitted=sys.argv[2].split(',')
 i=0
 while (i < len(splitted)):
-	print(splitted[i])
+	#print(splitted[i])
 	if ( splitted[i]=='FLAG' and type=='byte'):
 		str1+=codebook['ESC']
 	str1+=codebook[splitted[i]]
