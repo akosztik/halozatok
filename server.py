@@ -25,7 +25,7 @@ while True:
 			data = data.replace("b", "", 1)
 			data = data.replace("'", "")
 			if data:
-				#print(data)
+				print(data)
 				tipus = data.split(':')
 				#print(tipus)
 				print("binaris tipusa: " + tipus[0])
