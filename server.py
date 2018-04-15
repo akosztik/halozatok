@@ -89,3 +89,4 @@ while True:
                 sock.close()
                 inputs.remove(sock)
 server_sock.close()
+#http://szabilinux.hu/konya/konyv/4fejezet/4fadpro1.htm
