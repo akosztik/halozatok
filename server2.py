@@ -33,6 +33,24 @@ while True:
                 else:
                     sock.send("NNNN".encode())
                 print(str(clientAddrToChip))
+            data = sock.recv(1024).decode()
+            if data:
+                print(data)
+                if data in clientAddrToChip:
+                    print(clientAddrToChip[data])
+                    sock.send(clientAddrToChip[data].encode())
+                    print("sended")
+                else:
+                    sock.send("nincs ilyen nevu cliens".encode())
+            data = sock.recv(1024).decode()
+            if data:
+                print(data)
+                if data in clientAddrToChip:
+                    print(clientAddrToChip[data])
+                    sock.send(clientAddrToChip[data].encode())
+                    print("sended")
+                else:
+                    sock.send("nincs ilyen nevu cliens".encode())
             else:
                 sock.close()
                 inputs.remove(sock)
