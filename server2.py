@@ -12,6 +12,9 @@ server_sock.listen(1)
 print("Waiting for connection...")
 inputs = [server_sock]
 clientAddrToChip = {}
+sumMeassages = ''
+
+
 
 while True:
     readable,writeable,ex = select.select(inputs,inputs,inputs)
@@ -45,12 +48,7 @@ while True:
             data = sock.recv(1024).decode()
             if data:
                 print(data)
-                if data in clientAddrToChip:
-                    print(clientAddrToChip[data])
-                    sock.send(clientAddrToChip[data].encode())
-                    print("sended")
-                else:
-                    sock.send("nincs ilyen nevu cliens".encode())
+
             else:
                 sock.close()
                 inputs.remove(sock)

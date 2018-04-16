@@ -17,8 +17,18 @@ else:
     chip = str(data)
 
 def cdmaEncoding(chipfogado, uzenet):
-    str1=''
-    return üzenet
+    codedMessage = ''
+    i = 0
+    while i<len(uzenet):
+        if uzenet[i] == '0':
+            transformed = int('-1')
+            codedMessage += str(transformed*int(chipfogado))
+
+        else:
+            transformed = int('1')
+            codedMessage += str(transformed * int(chipfogado))
+        i += 1
+    return codedMessage
 
 
 print("Add meg a cél clienst és az üzenetet! \n")
@@ -29,12 +39,13 @@ client_sock.send(fogado.encode())
 data = client_sock.recv(1024).decode()
 print(data)
 if data != 'nincs ilyen nevu cliens':
-    chipfogado = data
+    chipfogado = int(data)
     print(chipfogado)
 else:
     print('nincs ilyen nevu cliens')
 
 encodoltUzenet = cdmaEncoding(chipfogado, uzenet)
+print(encodoltUzenet)
 '''
 client_sock.send(encodoltUzenet)
 data = client_sock.recv(1024)
