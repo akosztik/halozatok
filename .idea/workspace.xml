@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4d80954-66a9-4d38-af88-4950e965fd26" name="Default" comment="" />
+    <list default="true" id="b4d80954-66a9-4d38-af88-4950e965fd26" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/homework1/client" beforeDir="false" afterPath="$PROJECT_DIR$/client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/server.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +14,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CDMAClient.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="haziBitByteHammingClient.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homework1/haziBitByteHammingClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework1/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CDMAClient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="153">
+              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -26,8 +50,8 @@
       <file leaf-file-name="server2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework2/server2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
               </folding>
@@ -70,6 +94,11 @@
             <path>
               <item name="halozatok" type="b2602c69:ProjectViewProjectNode" />
               <item name="halozatok" type="462c0819:PsiDirectoryNode" />
+              <item name="homework1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="halozatok" type="b2602c69:ProjectViewProjectNode" />
+              <item name="halozatok" type="462c0819:PsiDirectoryNode" />
               <item name="homework2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -84,6 +113,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anett.kosztik.ext\halozatok" />
       <recent name="C:\Users\anett.kosztik.ext\halozatok\homework1" />
       <recent name="C:\Users\anett.kosztik.ext\halozatok\homework2" />
     </key>
@@ -100,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CDMAClient C">
+  <component name="RunManager" selected="Python.haziBitByteHammingClient">
     <configuration name="CDMAClient A" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="halozatok" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +203,42 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="haziBitByteHammingClient" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="halozatok" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/homework1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework1/haziBitByteHammingClient.py" />
+      <option name="PARAMETERS" value="bit A,B,FLAG,ESC" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="halozatok" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/homework1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework1/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="server2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="halozatok" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,9 +263,13 @@
       <item itemvalue="Python.CDMAClient D" />
       <item itemvalue="Python.CDMAClient A" />
       <item itemvalue="Python.server2" />
+      <item itemvalue="Python.server" />
+      <item itemvalue="Python.haziBitByteHammingClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.haziBitByteHammingClient" />
+        <item itemvalue="Python.server" />
         <item itemvalue="Python.server2" />
         <item itemvalue="Python.CDMAClient A" />
       </list>
@@ -220,7 +290,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20595238" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -250,20 +319,37 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework2/server2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
+    <entry file="file://$PROJECT_DIR$/homework1/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="119">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework1/haziBitByteHammingClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
