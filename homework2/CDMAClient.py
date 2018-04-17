@@ -10,7 +10,7 @@ client_sock.send(str1.encode())
 data = client_sock.recv(1024).decode()
 print(data)
 if data == 'NNNN':
-    print("több kapcsolatot nem tudott fogadni a server! \n")
+    print("tobb kapcsolatot nem tudott fogadni a server! \n")
     client_sock.close()
 else:
     print("chipet kaptam: " + str(data))
@@ -72,13 +72,13 @@ def cdmaDencoding(chip, codedMessage):
 def checkDataLenght():
     data = 'C 123456789'
     while len(data) > 10:
-        data = input()
+        data = raw_input()
         if len(data) > 10:
-            print("Az üzenetet( Az üzenet max 8 bit lehet! )! \n")
+            print("Az uzenetet( Az uzenet max 8 bit lehet! )! \n")
     return data
 
 
-print("Add meg a cél clienst és az üzenetet( Az üzenet max 8 bit lehet! )! \n")
+print("Add meg a cel clienst es az uzenetet( Az uzenet max 8 bit lehet! )! \n")
 
 data = checkDataLenght()
 

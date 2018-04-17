@@ -65,10 +65,8 @@ while True:
             print(client_addr)
             inputs.append(client_sock)
         else:
-            data = sock.recv(1024)
+            data = sock.recv(1024).decode()
             data = str(data)
-            data = data.replace("b", "", 1)
-            data = data.replace("'", "")
             if data:
                 print(data)
                 tipus = data.split(':')

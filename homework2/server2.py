@@ -86,7 +86,7 @@ while True:
                 print(messages)
                 if len(messages) == 2:
                     result = bitAddition(messages.pop(), messages.pop())
-                    print('összegzett: ' + result)
+                    print('osszegzett: ' + result)
                     broadcast(result, inputs)
 
 
