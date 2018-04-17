@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4d80954-66a9-4d38-af88-4950e965fd26" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/homework2/CDMAClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2/CDMAClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework2/server2.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2/server2.py" afterDir="false" />
-    </list>
+    <list default="true" id="b4d80954-66a9-4d38-af88-4950e965fd26" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +14,8 @@
       <file leaf-file-name="CDMAClient.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+            <state relative-caret-position="344">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -103,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CDMAClient A">
+  <component name="RunManager" selected="Python.CDMAClient C">
     <configuration name="CDMAClient A" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="halozatok" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,8 +200,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CDMAClient A" />
         <item itemvalue="Python.server2" />
+        <item itemvalue="Python.CDMAClient A" />
       </list>
     </recent_temporary>
   </component>
@@ -265,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+        <state relative-caret-position="344">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
