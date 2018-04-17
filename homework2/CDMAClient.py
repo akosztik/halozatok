@@ -43,7 +43,6 @@ def createNewIntArray(original):
     i = 0
     while i < len(original):
         if original[i] == '-':
-            print(int(original[i + 1]) * (-1))
             retval.append(int(original[i + 1]) * (-1))
             i += 2
         else:
@@ -53,26 +52,20 @@ def createNewIntArray(original):
 
 
 def cdmaDencoding(chip, codedMessage):
-    print('XXXXXX ' + codedMessage)
     retval = createNewIntArray(codedMessage)
-    print(retval)
-    print('YYYY ' + str(retval))
     encodedMessage = ''
     i = 0
     while i < len(retval):
         sum = 0
         for chipsplit in chip:
-            print(chipsplit)
             sum += int(chipsplit) * retval[i]
             i += 1
-
         if (sum == 1):
             encodedMessage += '1'
         if (sum == 0):
             encodedMessage += 'N'
         if (sum == -1):
             encodedMessage += '0'
-        print('>>>>>> ' + encodedMessage)
     return encodedMessage
 
 
@@ -95,7 +88,7 @@ data = client_sock.recv(1024).decode()
 
 if data != 'nincs ilyen nevu cliens':
     encodoltUzenet = cdmaEncoding(data, message[1])
-    print(encodoltUzenet)
+    print('encoded Message:' + encodoltUzenet)
     client_sock.send(encodoltUzenet.encode())
 else:
     print('nincs ilyen nevu cliens')

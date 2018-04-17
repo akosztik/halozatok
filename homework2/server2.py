@@ -45,7 +45,6 @@ def bitAddition(firt, secund):
 
     while i < len(tempFirst):
         tempInt = tempFirst[i] + tempSecund[i]
-        print(str(tempFirst[i]) + ' ' + str(tempSecund[i]) + ' = ' + str(tempInt))
         result += str(tempInt)
         i += 1
     return result
@@ -53,7 +52,6 @@ def bitAddition(firt, secund):
 def broadcast(result, inputs):
     for sock in inputs:
         if sock is not server_sock:
-            print("Meg itt is megvagyok")
             sock.send(result.encode())
 
 while True:
@@ -65,9 +63,7 @@ while True:
             inputs.append(client_sock)
             data = client_sock.recv(1024).decode()
             if data:
-                print(data)
                 name = data.split('"')[1]
-                print(name)
                 if len(chipsequences) != 0:
                     clientAddrToChip[name] = chipsequences.pop()
                     client_sock.send(clientAddrToChip[name].encode())
@@ -79,22 +75,19 @@ while True:
             if data:
                 print(data)
                 if data in clientAddrToChip:
-                    print(clientAddrToChip[data])
                     sock.send(clientAddrToChip[data].encode())
-                    print("sended")
+                    print("sended chip for encoding" + clientAddrToChip[data])
                 else:
                     sock.send("nincs ilyen nevu cliens".encode())
             data = sock.recv(1024).decode()
             if data:
-                print('FOGADTAM')
                 print(data)
                 messages.append(data)
                 print(messages)
                 if len(messages) == 2:
                     result = bitAddition(messages.pop(), messages.pop())
-                    print('MAR MAJDNEM JOK VAGYUNKOSSZEG: ' + result)
+                    print('összegzett: ' + result)
                     broadcast(result, inputs)
-                    print("meg itt is jo")
 
 
 # nowTime = datetime.now().time()
