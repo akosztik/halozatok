@@ -15,6 +15,47 @@ sumMessage = ''
 messages = []
 lastSendedTime = datetime.datetime.now().time()
 
+
+from datetime import datetime
+def time_difference(time_start, time_end):
+    start = datetime.strptime(time_start, "%H%M%S")
+    end = datetime.strptime(time_end, "%H%M%S")
+    difference = end - start
+    minutes = difference.total_seconds() / 60
+    print('DIFF ' + minutes)
+    return int(minutes)
+
+def createNewIntArray(original):
+    retval = []
+    i = 0
+    while i < len(original):
+        if original[i] == '-':
+            retval.append(-1)
+            i += 2
+        else:
+            retval.append(int(original[i]))
+            i += 1
+    return retval
+
+def bitAddition(firt, secund):
+    result = ''
+    i = 0
+    tempFirst = createNewIntArray(firt)
+    tempSecund = createNewIntArray(secund)
+
+    while i < len(tempFirst):
+        tempInt = tempFirst[i] + tempSecund[i]
+        print(str(tempFirst[i]) + ' ' + str(tempSecund[i]) + ' = ' + str(tempInt))
+        result += str(tempInt)
+        i += 1
+    return result
+
+def broadcast(result, inputs):
+    for sock in inputs:
+        if sock is not server_sock:
+            print("Meg itt is megvagyok")
+            sock.send(result.encode())
+
 while True:
     readable, writeable, ex = select.select(inputs, inputs, inputs)
     for sock in readable:
@@ -47,11 +88,23 @@ while True:
             if data:
                 print('FOGADTAM')
                 print(data)
-                # messages.append(data)
-            else:
-                print('BEZARTAM')
-                sock.close()
-                inputs.remove(sock)
+                messages.append(data)
+                print(messages)
+                if len(messages) == 2:
+                    result = bitAddition(messages.pop(), messages.pop())
+                    print('MAR MAJDNEM JOK VAGYUNKOSSZEG: ' + result)
+                    broadcast(result, inputs)
+                    print("meg itt is jo")
+
+
+# nowTime = datetime.now().time()
+# print(nowTime)
+    #percek = time_difference(lastSendedTime, nowTime)
+
+    # if 1:
+        # print("ellenorzom")
+
+
     # from datetime import datetime
     # print(datetime.datetime.now().time())
     # FMT = '%H:%M:%S'
@@ -65,3 +118,4 @@ server_sock.close()
 
 # https://www.youtube.com/watch?v=XJ81CuujwYE
 # https://www.youtube.com/watch?v=5plZGFd-cWc
+

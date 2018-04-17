@@ -50,19 +50,18 @@ data = input()
 message = data.split(' ')
 client_sock.send(message[0].encode())
 data = client_sock.recv(1024).decode()
-print(data)
 
 if data != 'nincs ilyen nevu cliens':
     encodoltUzenet = cdmaEncoding(data, message[1])
     print(encodoltUzenet)
+    client_sock.send(encodoltUzenet.encode())
 else:
     print('nincs ilyen nevu cliens')
 
-'''
-client_sock.send(encodoltUzenet.encode())
+
 data = client_sock.recv(1024).decode()
-print(data)
+print("received SUMMED message: " + str(data))
 
-
+'''
 client_sock.close()
 '''

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4d80954-66a9-4d38-af88-4950e965fd26" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDMAClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2/CDMAClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/client" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/haziBitByteHammingClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/haziBitByteHammingClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server2.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2/server2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework2/CDMAClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2/CDMAClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework2/server2.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2/server2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +17,8 @@
       <file leaf-file-name="CDMAClient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+            <state relative-caret-position="786">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -32,8 +29,8 @@
       <file leaf-file-name="server2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework2/server2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="60" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="60" />
+            <state relative-caret-position="276">
+              <caret line="99" column="15" lean-forward="true" selection-start-line="99" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
               </folding>
@@ -106,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CDMAClient D">
+  <component name="RunManager" selected="Python.CDMAClient C">
     <configuration name="CDMAClient A" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="halozatok" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,8 +203,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.server2" />
         <item itemvalue="Python.CDMAClient A" />
+        <item itemvalue="Python.server2" />
       </list>
     </recent_temporary>
   </component>
@@ -258,8 +255,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/homework2/CDMAClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+        <state relative-caret-position="786">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -268,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework2/server2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="60" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="60" />
+        <state relative-caret-position="276">
+          <caret line="99" column="15" lean-forward="true" selection-start-line="99" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
           </folding>
