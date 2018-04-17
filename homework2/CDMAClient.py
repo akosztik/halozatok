@@ -38,14 +38,56 @@ def cdmaEncoding(chipfogado, uzenet):
     return codedMessage
 
 
-def cdmaDencoding(chip, uzenet):
-    codedMessage = ''
+def createNewIntArray(original):
+    retval = []
     i = 0
-    return codedMessage
+    while i < len(original):
+        if original[i] == '-':
+            print(int(original[i + 1]) * (-1))
+            retval.append(int(original[i + 1]) * (-1))
+            i += 2
+        else:
+            retval.append(int(original[i]))
+            i += 1
+    return retval
+
+
+def cdmaDencoding(chip, codedMessage):
+    print('XXXXXX ' + codedMessage)
+    retval = createNewIntArray(codedMessage)
+    print(retval)
+    print('YYYY ' + str(retval))
+    encodedMessage = ''
+    i = 0
+    while i < len(retval):
+        sum = 0
+        for chipsplit in chip:
+            print(chipsplit)
+            sum += int(chipsplit) * retval[i]
+            i += 1
+
+        if (sum == 1):
+            encodedMessage += '1'
+        if (sum == 0):
+            encodedMessage += 'N'
+        if (sum == -1):
+            encodedMessage += '0'
+        print('>>>>>> ' + encodedMessage)
+    return encodedMessage
+
+
+def checkDataLenght():
+    data = 'C 123456789'
+    while len(data) > 10:
+        data = input()
+        if len(data) > 10:
+            print("Az üzenetet( Az üzenet max 8 bit lehet! )! \n")
+    return data
 
 
 print("Add meg a cél clienst és az üzenetet( Az üzenet max 8 bit lehet! )! \n")
-data = input()
+
+data = checkDataLenght()
 
 message = data.split(' ')
 client_sock.send(message[0].encode())
@@ -58,10 +100,10 @@ if data != 'nincs ilyen nevu cliens':
 else:
     print('nincs ilyen nevu cliens')
 
-
 data = client_sock.recv(1024).decode()
 print("received SUMMED message: " + str(data))
-
+decodedMessage = cdmaDencoding(chip, data)
+print("decoded message: " + decodedMessage)
 '''
 client_sock.close()
 '''
