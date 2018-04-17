@@ -80,7 +80,7 @@ while True:
                 binary = removeFrame(binary)
                 if (type=='bit'):
                     binary=removeBits(binary)
-                    print("bitkonverzió után: " + binary)
+                    print("bitkonverzio utan: " + binary)
                 word = byteConversion(binary)
                 if (type=='byte'):
                     word = removeEsc(word)
