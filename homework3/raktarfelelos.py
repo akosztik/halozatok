@@ -55,3 +55,7 @@ while True:
                 sock.close()
                 inputs.remove(sock)
 server_sock.close()
+
+'''
+https://wiki.python.org/moin/UdpCommunication
+'''
